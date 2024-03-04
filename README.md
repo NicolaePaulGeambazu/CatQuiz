@@ -1,5 +1,5 @@
 # CatQuiz
-Project url:
+Project url: https://cat-quiz-eight.vercel.app
 
 This technical test it is a reflection of a Cat Quiz. I have tried to keep simple end to be intuitive but also I have added some fuctionality what I think will be good for user. In this project will be 2 pages, first one will ask the user if is ready for quiz and second page will be the quiz.
 
