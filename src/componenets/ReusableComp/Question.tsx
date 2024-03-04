@@ -11,7 +11,6 @@ const Question = ({ questionNumber, onAnswer, catData }: QuestionProps & { catDa
     setTimeout(() => {
       onAnswer(choice, iscorrect);
       setIsFlipped(false);
-      setCurrentQuestion((prevQuestion) => prevQuestion + 1);
     }, 2000);
   };
   
