@@ -5,14 +5,14 @@ import Scoreboard from '../componenets/Scoreboard/Scoreboard';
 import Question from '../componenets/ReusableComp/Question';
 
 const Quiz = () => {
-  const { currentQuestion, setScore, setCurrentQuestion, userAnswers, setUserAnswers, catData } = useQuizContext();
+  const { score, currentQuestion, setScore, setCurrentQuestion, userAnswers, setUserAnswers, catData } = useQuizContext();
   const [iscorrect, setiscorrect] = useState<boolean | null>(null);
 
   const handleAnswer = (answer: string, iscorrect: boolean) => {
+    console.log(iscorrect);
     setUserAnswers([...userAnswers, answer]);
     setiscorrect(iscorrect);
     setScore(prevScore => iscorrect ? prevScore + 1 : prevScore);
-    setCurrentQuestion(currentQuestion + 1);
   };
 
   return (

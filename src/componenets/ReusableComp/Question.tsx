@@ -12,7 +12,7 @@ const Question = ({ questionNumber, onAnswer, catData }: QuestionProps & { catDa
       onAnswer(choice, iscorrect);
       setIsFlipped(false);
       setCurrentQuestion((prevQuestion) => prevQuestion + 1);
-    }, 50000);
+    }, 2000);
   };
   
   return (

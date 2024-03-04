@@ -24,7 +24,6 @@ export const useQuizContext = () => {
   }
   return context;
 };
-
 export const QuizProvider = ({ children }: LayoutProps) => {
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -62,7 +61,6 @@ export const QuizProvider = ({ children }: LayoutProps) => {
   const handleNextQuestion = () => {
     setCurrentQuestion(prevQuestion => prevQuestion + 1);
   };
-
   if (isLoading) return <Loader />;
   if (isError) return <div>Error fetching cat data</div>;
 
